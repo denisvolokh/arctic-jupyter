@@ -1,0 +1,13 @@
+arctic: 
+  image: arctic-jupyter
+  container_name: arctic
+  ports: 
+    - "8888:8888"
+  volumes: 
+    - "./notebooks:/notebooks"
+  links:
+    - mongo
+
+mongo:
+  image: mongo
+  container_name: arctic_mongodb
