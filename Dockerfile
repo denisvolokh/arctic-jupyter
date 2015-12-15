@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update -y
-RUN apt-get install -y git python-pip python-dev build-essential curl libcurl4-openssl-dev
+RUN apt-get install -y git python-pip python-dev build-essential curl libcurl4-openssl-dev python-matplotlib
 
 # Install Tini
 RUN curl -L https://github.com/krallin/tini/releases/download/v0.6.0/tini > tini && \
