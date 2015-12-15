@@ -20,6 +20,12 @@ RUN mkdir -p -m 700 /root/.jupyter/ && \
 
 RUN pip install git+https://github.com/manahl/arctic.git Quandl ystockquote
 
+#sudo pip uninstall pandas
+#sudo pip uninstall numpy
+#sudo easy_install --upgrade numpy
+#sudo pip install pandas
+#RUN pip install zipline
+
 VOLUME /notebooks
 WORKDIR /notebooks
 
